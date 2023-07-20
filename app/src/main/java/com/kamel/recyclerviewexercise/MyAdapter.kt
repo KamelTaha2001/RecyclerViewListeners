@@ -10,7 +10,7 @@ class MyAdapter(private val dataList : List<MyData>, private val adapterClickabl
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_layout, parent, false)
-        return MyViewHolder(itemView, dataList[viewType], adapterClickable)
+        return MyViewHolder(itemView, adapterClickable)
     }
 
     override fun getItemCount(): Int {
